@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+body{
+  margin:0;
+  padding:0;
+}
+.bg-container{
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+.container-fluid #logo{
+    animation: glitch 1.5s infinite;
+}
+.container h1{
+    font-size: 6em;
+    color: #fff;
+    font-weight: 650;
+    line-height: 1.9;
+    letter-spacing: -1px; 
+    font-family: 'Do Hyeon', sans-serif; 
+}
+.container p{
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.container .btn{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.container .imgBox{
+    width: 90px;
+    height: 150px;
+    background-image: url('../images/wp6247685-tokio-money-heist-wallpapers.jpg');
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.5;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+
+    0%,100%{
+        background-position: top;
+    }
+    45%,55%{
+        background-position: bottom;
+    }
+
+}
+.sci{
+    position: absolute;
+    top: 16%;
+    right: -14%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 10px 0;
+    transform: scale(0.6);
+    
+}
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.95);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+.trailer video{
+    min-width: 40vw;
+    height: 70vh;
+    outline: none;
+}
+.trailer .close{
+    position: absolute;
+    top: 15.5vh;
+    right: 20.5vw;
+    cursor: pointer;
+    filter: invert(1);
+    max-width:32px ;
+}
+.box{
+    position: absolute;
+    background: #000;
+}
+
+/*Keyframes for glitch*/
+
+@keyframes glitch{
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+
+
+  
